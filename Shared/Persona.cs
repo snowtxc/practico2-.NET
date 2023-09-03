@@ -13,14 +13,7 @@
             }
             set
             {
-                if (value.Length >= 7)
-                {
-                    documento = value;
-                }
-                else
-                {
-                    throw new Exception("El formato del documento no es correcto.");
-                }
+                documento = value;
             }
         }
 
@@ -28,6 +21,7 @@
         {
             Console.WriteLine("-- Persona --");
             Console.WriteLine("Nombre: " + Nombre);
+
             Console.WriteLine("Documento: " + Documento);
         }
 

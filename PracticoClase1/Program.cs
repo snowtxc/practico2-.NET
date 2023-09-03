@@ -6,9 +6,10 @@ using BusinessLayer.IBLs;
 using BusinessLayer.BLs;
 using PracticoClase1;
 
+
 Console.WriteLine("Primera Aplicación con .NET");
 
-IDAL_Personas _personas = new DAL_Personas();
+IDAL_Personas _personas = new DAL_Personas_ADONET();
 IBL_Personas _personasBL = new BL_Personas(_personas);
 Commands commands = new Commands(_personasBL);
 

@@ -29,6 +29,7 @@ namespace PracticoClase1
 
             _personasBL.Insert(persona);
 
+
             _personasBL.Get(persona.Documento).Print();
         }
 
